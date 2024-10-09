@@ -1,0 +1,106 @@
+/* Tamaño del contenido de toda la pagina*/
+html {
+    font-size: 16px;
+}
+
+/*voy a usar mediasquery para hacer adaptable la letra a un dispositivo diferente*/
+@media screen and(max-width:400px) {
+    html {
+        font-size: 9.41176px;
+    }
+}
+
+/*Los elementos del heigth usaran el 100% de sus contenedores*/
+html,
+body {
+    height: 100%;
+}
+
+/*Se cambiara tanto el tipo de letra, tambien el color del fondo*/
+body {
+    background: #050505;
+    /*Seleccionar el tipo de letra en funcion al codio en base*/
+    font-family: 'Afacad+Flux';
+    /*La etiqueta rem va a coger el tamaño padre que es 16px y lo multiplicara por 1.7*/
+    font-size: 1.7rem;
+    font-style: normal;
+    /*Hace a la letra un poco mas ancha*/
+    font-weight: normal;
+    /*Es el ancho que existe entre los espacios de las palabras o sangria*/
+    line-height: 1.882;
+    color: black;
+    /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
+    margin: 0;
+    /*Le va a dar un margen desde el exterior hacia el interior del contenedor*/
+    padding: 12px;
+}
+
+/*Estilos a los links*/
+a {
+    color: #cf1767;
+    transition: all 0.3s ease-in-out;
+}
+
+/*Transicion de estilos para los links*/
+a:hover,
+/*Le genera un pequeño brillo*/
+a:focus,
+/**/
+a:active {
+    color: white;
+}
+
+/*Al poner el maus encima del link hacer que cambie el color*/
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/*Tipografía*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Frank Ruh1 libre", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+    /*Faltan 2 caracteristicas*/
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+    /*Margen hacia arriba*/
+    margin-top: 6rem;
+    /*Margen hacia abajo*/
+    margin-bottom: 16rem;
+}
+
+/*Si el dispostivo tiene un tamaño mayor a 600 px hacer*/
+@media screen and(max-width:600px) {
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+        /*Margen hacia arriba*/
+        margin-top: 6rem;
+    }
+}

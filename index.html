@@ -1,0 +1,170 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlaces a css-->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/vendor.css">
+    <!--<link rel="stylesheet" href="estilos/font-awesome/css/fontawesome-all.css">-->
+    <!--JavaScript
+    =============================================-->
+    <script src="js/modernizr.js"></script>
+    <!--El js/pace.min.js es una libreria
+    =============================================-->
+    <script src="js/pace.min.js"></script>
+    <!--Favicon - icono de la pestaña, una en apple y la otra en windows
+    ====================================================================-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <title>Portafolios</title>
+</head>
+
+<body id="top">
+    <!--Vista de carga o loading
+    ============================-->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!--Empezamos con el header
+    ============================-->
+    <header class="s-header">
+        <div class="header-logo">
+            <a href="index.html" class="site-logo">
+                <img src="imagenes/logo.svg" alt="Homapage">
+            </a>
+        </div>
+        <!--Barra de Navegacion----(nav.header-nav-wrap)
+        ================================================-->
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a href="#intro" class="smoothscroll" title="intro">Introduction</a></li>
+                <li><a href="#about" title="about" class="smoothscroll">About</a></li>
+                <li><a href="#services" title="services" class="smoothscroll">Services</a></li>
+                <li><a href="#works" title="works" class="smoothscroll">works</a></li>
+                <li><a href="#contact" title="contact us" class="smoothscroll">contact</a></li>
+            </ul>
+            <!--Creamos una lista desordenada para las redes sociales
+            =========================================================-->
+            <ul class="header-social">
+                <!--El elemento i nos sirve para visualisar algun icono, aria-hidden es una api para consumir los recursos de una pagina web externa a nuestro lugar
+                =============================================================================-->
+                <li><a href="#1"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#2"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#3"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#4"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        <a href="#" class="header-menu-toggle"><span>Menu</a>
+    </header> <!--Fin del header
+                ============================-->
+    <!--Introduccion
+    =====================================================-->
+    <section id="intro" class="s-intro target-section">
+        <div class="row intro-content">
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hola, mi nombre es David Ruiz</h3>
+                <h1>
+                    <!--Se utiliza el elemento br para hacer un salto en la linea de texto
+                    ======================-->
+                    Desarrollador web <br>
+                    Jugador de lol
+                </h1>
+            </div>
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Presiona para mas informacion
+                </a>
+            </div>
+            <!--La clase intro grid podra ser usado para crear una cuadricula-->
+            <div class="intro-grid"></div>
+            <!--La clase intro pic se puede llegar a utilizar para contener una imagen-->
+            <div class="intro-pic"></div>
+        </div> <!--Finalizacion del row-->
+    </section> <!--Finalizacion del intro-->
+    <!--about(sobre nosotros)
+===========================-->
+    <section id="about" class="s-about target-section">
+        <div class="about-me">
+            <!--En el div row heading block es el que tendra nuestra encabezera-->
+            <div class="row heading-block">
+                <!--Vamos a generar una sola columna de nuestro h2-->
+                <div class="colum large-full">
+                    <h2 class="section-heading">About me</h2>
+                </div>
+            </div>
+            <!--La clase row about-me__content es donde se tendra nuestro contenido o cuerpo-->
+            <div class="row about-me__content">
+                <div class="colum large-full about-me__text">
+                    <!--La clase lead del elemento p me generara la primera parte de mi biografia-->
+                    <p class="lead">
+                        Mi nombre es david ruiz, tengo 19 años, me gradué
+                        en la escuela scotland school con un promedio de 9,45 sobre 10, me
+                        inscribí en distintos
+                        cursos durante el verano, entre ellos natación
+                        donde aprendí a nadar de manera sencilla.
+                    </p>
+                    <p>
+                        Entre en una pequeña institución para aprender a
+                        cocinar distintos platillos relacionados
+                        con carnes, salsas, sopas, etc.
+                    </p>
+                    <p>
+                        Entre en un preuniversitario donde me prepararon
+                        para la prueba transformar
+                        donde saque un promedio de 8,5. Dicha nota no me
+                        sirvió para entrar en ninguna de las carreras a las que apuntaba.
+                    </p>
+                    <p>
+                        Actualmente estudio ingles los sábados en la
+                        politécnica, estoy en el nivel de B2 y a acabar para entrar en el nivel
+                        C1
+                    </p>
+                </div>
+            </div>
+            <!--Crear un boton que me lleve a una pagina donde tendre mi-->
+            <div class="row about-me__buttons">
+                <!--Solo se utilizara la mitad de mi pantalla para mi contenido-->
+                <div class="column large-half tab-full">
+                    <!--Aqui estara el link de la pagina para que me seleccione-->
+                    <a href="#" class="btn btn--stroke full-width">Hire me</a>
+                </div>
+                <!--Documento pdf de mi CV-->
+                <div class="colum large-half tab-full">
+                    <a href="#" class="btn btn--primary full-width">Download CV</a>
+                </div>
+            </div>
+        </div> <!--End about me
+=======================-->
+        <!--Experience-->
+        <div class="about-experience">
+            <!--Esta parte sera nuestro encabezado-->
+            <div class="row heading-block">
+                <div class="column large-full">
+                    <h2 class="section-heading">Work & education</h2>
+                </div>
+            </div>
+            <!--Generar el cuerpo de nuestra linea de tiempo-->
+            <div class="row about-experience__timeline">
+                <div class="column large-half tab-full">
+                    <div class="timeline">
+                        <div class="timeline_icon-wrap">
+                            <!--La etiqueta span sirve para generar un 
+                                pequeño espacio donde se podra
+                                colocar un icono-->
+                            <span class="timeline_icon- timeline_icon--work"></span>
+                        </div>
+                        <div class="timeline__block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
